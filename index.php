@@ -156,7 +156,8 @@ function launchBOLT()
 	productinfo: $('#pinfo').val(),
 	udf5: $('#udf5').val(),
 	surl : $('#surl').val(),
-	furl: $('#surl').val()
+	furl: $('#surl').val(),
+	mode: 'dropout'	
 },{ responseHandler: function(BOLT){
 	console.log( BOLT.response.txnStatus );		
 	if(BOLT.response.txnStatus != 'CANCEL')
